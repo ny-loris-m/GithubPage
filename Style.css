@@ -59,9 +59,6 @@ header .Title {
     background-color: #fff;
     box-shadow: 0 8px 20px rgba(11, 37, 69, 0.06);
     text-align: left;
-    transition:
-        transform 0.18s ease,
-        box-shadow 0.18s ease;
     border: 1px solid #e6e9ef;
 }
 
@@ -84,16 +81,4 @@ header .Title {
 .card .Filler {
     padding: 0 1vh 1vh 1vh;
     color: #555;
-}
-
-/* Responsive tweaks */
-@media (max-width: 520px) {
-    header {
-        flex-direction: column;
-        gap: 1vh;
-        align-items: flex-start;
-    }
-    .card img {
-        height: 220px;
-    }
 }
