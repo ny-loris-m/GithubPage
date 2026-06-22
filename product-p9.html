@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T-Shirt Classic — Mein Webshop</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <h1 class="logo">T-Shirt Classic</h1>
+    <nav>
+      <a href="Index.html">Start</a>
+      <a href="products.html">Produkte</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container product-detail">
+    <article>
+      <h2>T-Shirt Classic</h2>
+      <div class="detail-grid">
+        <div class="media-text">
+          <img src="images/placeholder.svg" alt="T-Shirt Classic">
+          <video controls class="product-video" src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4">Ihr Browser unterstützt kein Video.</video>
+        </div>
+        <div class="meta">
+          <p class="price">€19.99</p>
+          <p>Baumwoll-T-Shirt in mehreren Farben.</p>
+          <form onsubmit="orderProduct('p9','T-Shirt Classic', this); return false;">
+            <label for="qty-p9">Menge</label>
+            <input id="qty-p9" name="qty" type="number" value="1" min="1" />
+            <label for="name-p9">Name</label>
+            <input id="name-p9" name="name" required />
+            <label for="email-p9">E-Mail</label>
+            <input id="email-p9" name="email" type="email" required />
+            <button type="submit">Jetzt bestellen</button>
+          </form>
+          <button onclick="addToCart('p9'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; 2026 Mein Webshop</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  {"id":"p1","title":"Kopfhörer X1","category":"Elektronik","price":59.99,"image":"images/placeholder.svg","description":"Leichte Kopfhörer mit gutem Klang und langer Akkulaufzeit."},
+  {"id":"p2","title":"Smartphone S","category":"Elektronik","price":399.00,"image":"images/placeholder.svg","description":"Kompaktes Smartphone mit scharfem Display und guter Kamera."},
+  {"id":"p3","title":"Rucksack Travel","category":"Outdoor","price":79.50,"image":"images/placeholder.svg","description":"Wasserabweisender Rucksack mit vielen Fächern."},
+  {"id":"p4","title":"Sneaker Run","category":"Fashion","price":89.99,"image":"images/placeholder.svg","description":"Bequeme Sneaker für Alltag und Sport."},
+  {"id":"p5","title":"Kaffeebecher Thermo","category":"Home","price":24.90,"image":"images/placeholder.svg","description":"Isolierter Becher, hält Getränke lange warm."},
+  {"id":"p6","title":"Lampe Studio","category":"Home","price":45.00,"image":"images/placeholder.svg","description":"Designlampe mit dimmbarer LED."},
+  {"id":"p7","title":"Yogamatte Pro","category":"Sport","price":29.99,"image":"images/placeholder.svg","description":"Rutschfeste Matte für Yoga und Fitness."},
+  {"id":"p8","title":"Kamera Lens 50mm","category":"Elektronik","price":129.00,"image":"images/placeholder.svg","description":"Scharfe Festbrennweite, ideal für Portraits."},
+  {"id":"p9","title":"T-Shirt Classic","category":"Fashion","price":19.99,"image":"images/placeholder.svg","description":"Baumwoll-T-Shirt in mehreren Farben."},
+  {"id":"p10","title":"Wasserflasche Eco","category":"Outdoor","price":14.50,"image":"images/placeholder.svg","description":"Leichte Trinkflasche aus Edelstahl."}
+]

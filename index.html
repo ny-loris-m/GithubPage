@@ -1,22 +1,142 @@
 <!doctype html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./Style.css" />
-        <title>Homepage</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mein Webshop — Startseite</title>
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-    <header>
-        <h1 class="Title">Meine Mediensammlung</h1>
-        <nav>
-            <a href="Videos.html"><button class="MediaType">Videos</button></a>
-            <a href="Musik.html"><button class="MediaType">Musik</button></a>
-            <a href="Games.html"><button class="MediaType">Games</button></a>
-        </nav>
-    </header>
-    <main class="container">
-        <p class="Filler">Willkommen! Wähle eine Kategorie oben, um die Sammlung zu sehen.</p>
-    </main>
+        <header class="site-header">
+            <div class="container">
+                <h1 class="logo">Mein Webshop</h1>
+                <nav>
+                    <a href="Index.html" aria-current="page">Start</a>
+                    <a href="products.html">Produkte</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="cart.html"
+                        >Warenkorb (<span id="cart-count">0</span>)</a
+                    >
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="hero">
+                <h2>Neuheiten & Beliebte Produkte</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p1.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Kopfhörer X1"
+                            />
+                            <h4>Kopfhörer X1</h4>
+                            <p class="price">€59.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p1');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p2.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Smartphone S"
+                            />
+                            <h4>Smartphone S</h4>
+                            <p class="price">€399.00</p></a
+                        ><button
+                            onclick="
+                                addToCart('p2');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p3.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Rucksack Travel"
+                            />
+                            <h4>Rucksack Travel</h4>
+                            <p class="price">€79.50</p></a
+                        ><button
+                            onclick="
+                                addToCart('p3');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p4.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Sneaker Run"
+                            />
+                            <h4>Sneaker Run</h4>
+                            <p class="price">€89.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p4');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="categories">
+                <h3>Kategorien</h3>
+                <div class="chips">
+                    <a class="chip" href="products.html#Elektronik"
+                        >Elektronik</a
+                    >
+                    <a class="chip" href="products.html#Outdoor">Outdoor</a>
+                    <a class="chip" href="products.html#Fashion">Fashion</a>
+                    <a class="chip" href="products.html#Home">Home</a>
+                    <a class="chip" href="products.html#Sport">Sport</a>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <h3>Newsletter</h3>
+                <form>
+                    <label for="email-static">E-Mail</label>
+                    <input
+                        id="email-static"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="name@beispiel.de"
+                    />
+                    <button disabled>Abonnieren</button>
+                </form>
+                <p class="muted">Newsletter-Anmeldung</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2026 Mein Webshop</p>
+            </div>
+        </footer>
+
+        <script src="js/cart.js"></script>
+        <script src="js/site.js"></script>
     </body>
 </html>

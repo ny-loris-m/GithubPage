@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lampe Studio — Mein Webshop</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <h1 class="logo">Lampe Studio</h1>
+    <nav>
+      <a href="Index.html">Start</a>
+      <a href="products.html">Produkte</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container product-detail">
+    <article>
+      <h2>Lampe Studio</h2>
+      <div class="detail-grid">
+        <div class="media-text">
+          <img src="images/placeholder.svg" alt="Lampe Studio">
+          <video controls class="product-video" src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4">Ihr Browser unterstützt kein Video.</video>
+        </div>
+        <div class="meta">
+          <p class="price">€45.00</p>
+          <p>Designlampe mit dimmbarer LED.</p>
+          <form onsubmit="orderProduct('p6','Lampe Studio', this); return false;">
+            <label for="qty-p6">Menge</label>
+            <input id="qty-p6" name="qty" type="number" value="1" min="1" />
+            <label for="name-p6">Name</label>
+            <input id="name-p6" name="name" required />
+            <label for="email-p6">E-Mail</label>
+            <input id="email-p6" name="email" type="email" required />
+            <button type="submit">Jetzt bestellen</button>
+          </form>
+          <button onclick="addToCart('p6'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; 2026 Mein Webshop</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
