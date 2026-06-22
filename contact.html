@@ -1,66 +1,76 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kontakt — Mein Webshop</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header class="site-header container">
-    <h1 class="logo">Kontakt</h1>
-    <nav>
-      <a href="Index.html">Start</a>
-      <a href="products.html">Produkte</a>
-      <a href="contact.html" aria-current="page">Kontakt</a>
-      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kontakt — Mein Webshop</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header container">
+            <h1 class="logo">Kontakt</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="products.html">Produkte</a>
+                <a href="contact.html" aria-current="page">Kontakt</a>
+                <a href="cart.html"
+                    >Warenkorb (<span id="cart-count">0</span>)</a
+                >
+            </nav>
+        </header>
 
-  <main class="container">
-    <section>
-      <h2>Team</h2>
-      <p>Unser Team beantwortet gerne Fragen zum Shop.</p>
-    </section>
+        <main class="container">
+            <section>
+                <h2>Team</h2>
+                <p>Unser Team beantwortet gerne Fragen zum Shop.</p>
+            </section>
 
-    <section>
-      <h2>Kontaktformular</h2>
-      <form id="contact-form">
-        <label for="name">Name</label>
-        <input id="name" name="name" required />
+            <section>
+                <h2>Kontaktformular</h2>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" required />
 
-        <label for="email">E-Mail</label>
-        <input id="email" name="email" type="email" required />
+                    <label for="email">E-Mail</label>
+                    <input id="email" name="email" type="email" required />
 
-        <label for="subject">Betreff</label>
-        <select id="subject" name="subject">
-          <option>Allgemeine Frage</option>
-          <option>Bestellung</option>
-          <option>Reklamation</option>
-          <option>Kooperation</option>
-        </select>
+                    <label for="subject">Betreff</label>
+                    <select id="subject" name="subject">
+                        <option>Allgemeine Frage</option>
+                        <option>Bestellung</option>
+                        <option>Reklamation</option>
+                        <option>Kooperation</option>
+                    </select>
 
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+                    <label for="message">Nachricht</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
 
-        <button type="submit">Absenden</button>
-      </form>
-      <p id="contact-msg" class="muted"></p>
-    </section>
-  </main>
+                    <button type="submit">Absenden</button>
+                </form>
+                <p id="contact-msg" class="muted"></p>
+            </section>
+        </main>
 
-  <footer class="site-footer container">
-    <p>&copy; 2026 Mein Webshop</p>
-  </footer>
+        <footer class="site-footer container">
+            <p>&copy; 2026 Mein Webshop</p>
+        </footer>
 
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e){
-      e.preventDefault();
-      document.getElementById('contact-msg').textContent = 'Danke — Ihre Nachricht wurde (simuliert) versendet.';
-      this.reset();
-    });
-  </script>
-  <script src="js/cart.js"></script>
-  <script src="js/site.js"></script>
-</body>
+        <script>
+            document
+                .getElementById("contact-form")
+                .addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    document.getElementById("contact-msg").textContent =
+                        "Danke — Ihre Nachricht wurde (simuliert) versendet.";
+                    this.reset();
+                });
+        </script>
+        <script src="js/cart.js"></script>
+        <script src="js/site.js"></script>
+    </body>
 </html>

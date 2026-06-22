@@ -1,52 +1,87 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kamera Lens 50mm — Mein Webshop</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header class="site-header container">
-    <h1 class="logo">Kamera Lens 50mm</h1>
-    <nav>
-      <a href="Index.html">Start</a>
-      <a href="products.html">Produkte</a>
-      <a href="contact.html">Kontakt</a>
-      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kamera Lens 50mm — Mein Webshop</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header container">
+            <h1 class="logo">Kamera Lens 50mm</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="products.html">Produkte</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="cart.html"
+                    >Warenkorb (<span id="cart-count">0</span>)</a
+                >
+            </nav>
+        </header>
 
-  <main class="container product-detail">
-    <article>
-      <h2>Kamera Lens 50mm</h2>
-      <div class="detail-grid">
-        <div class="media-text">
-          <img src="images/placeholder.svg" alt="Kamera Lens 50mm">
-          <video controls class="product-video" src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4">Ihr Browser unterstützt kein Video.</video>
-        </div>
-        <div class="meta">
-          <p class="price">€129.00</p>
-          <p>Scharfe Festbrennweite, ideal für Portraits.</p>
-          <form onsubmit="orderProduct('p8','Kamera Lens 50mm', this); return false;">
-            <label for="qty-p8">Menge</label>
-            <input id="qty-p8" name="qty" type="number" value="1" min="1" />
-            <label for="name-p8">Name</label>
-            <input id="name-p8" name="name" required />
-            <label for="email-p8">E-Mail</label>
-            <input id="email-p8" name="email" type="email" required />
-            <button type="submit">Jetzt bestellen</button>
-          </form>
-          <button onclick="addToCart('p8'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button>
-        </div>
-      </div>
-    </article>
-  </main>
+        <main class="container product-detail">
+            <article>
+                <h2>Kamera Lens 50mm</h2>
+                <div class="detail-grid">
+                    <div class="media-text">
+                        <img
+                            src="images/placeholder.svg"
+                            alt="Kamera Lens 50mm"
+                        />
+                        <video
+                            controls
+                            class="product-video"
+                            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+                        >
+                            Ihr Browser unterstützt kein Video.
+                        </video>
+                    </div>
+                    <div class="meta">
+                        <p class="price">€129.00</p>
+                        <p>Scharfe Festbrennweite, ideal für Portraits.</p>
+                        <form
+                            onsubmit="
+                                orderProduct('p8', 'Kamera Lens 50mm', this);
+                                return false;
+                            "
+                        >
+                            <label for="qty-p8">Menge</label>
+                            <input
+                                id="qty-p8"
+                                name="qty"
+                                type="number"
+                                value="1"
+                                min="1"
+                            />
+                            <label for="name-p8">Name</label>
+                            <input id="name-p8" name="name" required />
+                            <label for="email-p8">E-Mail</label>
+                            <input
+                                id="email-p8"
+                                name="email"
+                                type="email"
+                                required
+                            />
+                            <button type="submit">Jetzt bestellen</button>
+                        </form>
+                        <button
+                            onclick="
+                                addToCart('p8');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </main>
 
-  <footer class="site-footer container">
-    <p>&copy; 2026 Mein Webshop</p>
-  </footer>
+        <footer class="site-footer container">
+            <p>&copy; 2026 Mein Webshop</p>
+        </footer>
 
-  <script src="js/cart.js"></script>
-</body>
+        <script src="js/cart.js"></script>
+    </body>
 </html>

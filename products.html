@@ -1,81 +1,252 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Produkte — Mein Webshop</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header class="site-header container">
-    <h1 class="logo">Produkte</h1>
-    <nav>
-      <a href="Index.html">Start</a>
-      <a href="products.html" aria-current="page">Produkte</a>
-      <a href="contact.html">Kontakt</a>
-      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Produkte — Mein Webshop</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header container">
+            <h1 class="logo">Produkte</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="products.html" aria-current="page">Produkte</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="cart.html"
+                    >Warenkorb (<span id="cart-count">0</span>)</a
+                >
+            </nav>
+        </header>
 
-  <main class="container">
-    <section>
-      <h3>Kategorien</h3>
-      <div class="chips">
-        <a class="chip" href="#Elektronik">Elektronik</a>
-        <a class="chip" href="#Outdoor">Outdoor</a>
-        <a class="chip" href="#Fashion">Fashion</a>
-        <a class="chip" href="#Home">Home</a>
-        <a class="chip" href="#Sport">Sport</a>
-      </div>
-    </section>
+        <main class="container">
+            <section>
+                <h3>Kategorien</h3>
+                <div class="chips">
+                    <a class="chip" href="#Elektronik">Elektronik</a>
+                    <a class="chip" href="#Outdoor">Outdoor</a>
+                    <a class="chip" href="#Fashion">Fashion</a>
+                    <a class="chip" href="#Home">Home</a>
+                    <a class="chip" href="#Sport">Sport</a>
+                </div>
+            </section>
 
-    <section id="Elektronik">
-      <h2>Elektronik</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p1.html"><img src="images/placeholder.svg" alt="Kopfhörer X1"><h4>Kopfhörer X1</h4><p class="price">€59.99</p></a><button onclick="addToCart('p1'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p2.html"><img src="images/placeholder.svg" alt="Smartphone S"><h4>Smartphone S</h4><p class="price">€399.00</p></a><button onclick="addToCart('p2'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p8.html"><img src="images/placeholder.svg" alt="Kamera Lens 50mm"><h4>Kamera Lens 50mm</h4><p class="price">€129.00</p></a><button onclick="addToCart('p8'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Elektronik">
+                <h2>Elektronik</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p1.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Kopfhörer X1"
+                            />
+                            <h4>Kopfhörer X1</h4>
+                            <p class="price">€59.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p1');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p2.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Smartphone S"
+                            />
+                            <h4>Smartphone S</h4>
+                            <p class="price">€399.00</p></a
+                        ><button
+                            onclick="
+                                addToCart('p2');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p8.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Kamera Lens 50mm"
+                            />
+                            <h4>Kamera Lens 50mm</h4>
+                            <p class="price">€129.00</p></a
+                        ><button
+                            onclick="
+                                addToCart('p8');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Outdoor">
-      <h2>Outdoor</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p3.html"><img src="images/placeholder.svg" alt="Rucksack Travel"><h4>Rucksack Travel</h4><p class="price">€79.50</p></a><button onclick="addToCart('p3'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p10.html"><img src="images/placeholder.svg" alt="Wasserflasche Eco"><h4>Wasserflasche Eco</h4><p class="price">€14.50</p></a><button onclick="addToCart('p10'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Outdoor">
+                <h2>Outdoor</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p3.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Rucksack Travel"
+                            />
+                            <h4>Rucksack Travel</h4>
+                            <p class="price">€79.50</p></a
+                        ><button
+                            onclick="
+                                addToCart('p3');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p10.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Wasserflasche Eco"
+                            />
+                            <h4>Wasserflasche Eco</h4>
+                            <p class="price">€14.50</p></a
+                        ><button
+                            onclick="
+                                addToCart('p10');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Fashion">
-      <h2>Fashion</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p4.html"><img src="images/placeholder.svg" alt="Sneaker Run"><h4>Sneaker Run</h4><p class="price">€89.99</p></a><button onclick="addToCart('p4'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p9.html"><img src="images/placeholder.svg" alt="T-Shirt Classic"><h4>T-Shirt Classic</h4><p class="price">€19.99</p></a><button onclick="addToCart('p9'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Fashion">
+                <h2>Fashion</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p4.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Sneaker Run"
+                            />
+                            <h4>Sneaker Run</h4>
+                            <p class="price">€89.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p4');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p9.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="T-Shirt Classic"
+                            />
+                            <h4>T-Shirt Classic</h4>
+                            <p class="price">€19.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p9');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Home">
-      <h2>Home</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p5.html"><img src="images/placeholder.svg" alt="Kaffeebecher Thermo"><h4>Kaffeebecher Thermo</h4><p class="price">€24.90</p></a><button onclick="addToCart('p5'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p6.html"><img src="images/placeholder.svg" alt="Lampe Studio"><h4>Lampe Studio</h4><p class="price">€45.00</p></a><button onclick="addToCart('p6'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Home">
+                <h2>Home</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p5.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Kaffeebecher Thermo"
+                            />
+                            <h4>Kaffeebecher Thermo</h4>
+                            <p class="price">€24.90</p></a
+                        ><button
+                            onclick="
+                                addToCart('p5');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p6.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Lampe Studio"
+                            />
+                            <h4>Lampe Studio</h4>
+                            <p class="price">€45.00</p></a
+                        ><button
+                            onclick="
+                                addToCart('p6');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Sport">
-      <h2>Sport</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p7.html"><img src="images/placeholder.svg" alt="Yogamatte Pro"><h4>Yogamatte Pro</h4><p class="price">€29.99</p></a><button onclick="addToCart('p7'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Sport">
+                <h2>Sport</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p7.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Yogamatte Pro"
+                            />
+                            <h4>Yogamatte Pro</h4>
+                            <p class="price">€29.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p7');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </main>
 
-  </main>
+        <footer class="site-footer container">
+            <p>&copy; 2026 Mein Webshop</p>
+        </footer>
 
-  <footer class="site-footer container">
-    <p>&copy; 2026 Mein Webshop</p>
-  </footer>
-
-  <script src="js/cart.js"></script>
-  <script src="js/site.js"></script>
-</body>
+        <script src="js/cart.js"></script>
+        <script src="js/site.js"></script>
+    </body>
 </html>
